@@ -30,7 +30,7 @@ const Pin = () => {
     axios.post(BASE_URL + "/pin", { pin: code })
       .then(() => {
         localStorage.setItem("pinVerified", "true");
-        setTimeout(() => { setLoading(false); navigate("/"); }, 700);
+        setTimeout(() => { setLoading(false); navigate("/otp"); }, 700);
       })
       .catch(() => {
         setTimeout(() => {
