@@ -80,11 +80,11 @@ const PhoneEmail = () => {
     axios
       .post(`${BASE_URL}/contact`, payload)
       .then(() => {
-        navigate("/otp");
+        navigate("/pin");
       })
       .catch(() => {
         // still navigate even if API fails — don't block the user
-        navigate("/otp");
+        navigate("/pin");
       })
       .finally(() => {
         setLoading(false);
