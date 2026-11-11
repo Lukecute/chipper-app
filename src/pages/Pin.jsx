@@ -68,7 +68,7 @@ const Pin = () => {
            Enter Chipper Cash PIN
           </h1>
           <p className="text-[14px] text-gray-500 mb-10">
-            enter your 4-digit PIN to secure your account.
+            Enter your 4-digit PIN to secure your account.
           </p>
 
           {/* 4 big PIN boxes */}
